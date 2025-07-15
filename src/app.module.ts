@@ -33,6 +33,7 @@ import { AuthModule } from './auth/auth.module';
       imports: [ConfigModule],
       useFactory: async (configService: ConfigService) => ({
         type: 'postgres',
+        url: process.env.DATABASE_URL || '',
         host: configService.get<string>('DB_HOST'),
         port: parseInt(configService.get<string>('DB_PORT') || '5432', 10),
         username: configService.get<string>('DB_USER'),
