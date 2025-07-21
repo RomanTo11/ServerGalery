@@ -39,6 +39,12 @@ export class ArtistasController {
       artista: {
         id: artista.id,
         nombre: artista.nombre,
+        biografia: artista.biografia,
+        pais: artista.pais,
+        fechaNacimiento: artista.fechaNacimiento,
+        imagenUrl: artista.imagenUrl,
+        descripcion: artista.descripcion,
+
         obras: artista.obras ? artista.obras.map(obra => ({
           id: obra.id,
           titulo: obra.titulo,

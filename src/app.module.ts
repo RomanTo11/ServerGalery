@@ -12,6 +12,8 @@ import { ObrasModule } from './obras/obras.module';
 import { CategoriesModule } from './categories/categories.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
+import { WishlistModule } from './wishlist/wishlist.module';
+import { OffersModule } from './offers/offers.module';
 
 
 @Module({
@@ -54,6 +56,8 @@ import { AuthModule } from './auth/auth.module';
     CategoriesModule,
     UsersModule,
     AuthModule,
+    WishlistModule,
+    OffersModule,
   ],
 })
 export class AppModule {}

@@ -22,6 +22,9 @@ export class ObrasController {
         tecnica: obra.tecnica,
         categoria: obra.categoria?.nombre || null,
         artista: obra.artista ? obra.artista.nombre : null,
+        descripcion: obra.descripcion,
+        imagenUrl: obra.imagenUrl,
+        fechaCreacion: obra.fechaCreacion,
       }
     };
   }

@@ -12,6 +12,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:5173', // Vite
       'http://localhost:3002', // React clásico
+      'https://servergalery.onrender.com' // render server
     ],
     credentials: true,
   });

@@ -8,11 +8,11 @@ export class CreateCategoryDto {
   @IsString()
   descripcion?: string;
 
-  @IsString()
-  imagenUrl: string;
-
   @IsOptional()
   @IsString()
   fechaCreacion?: Date; 
 
+  @IsOptional()
+  @IsString()
+  imagenUrl: string;
 }

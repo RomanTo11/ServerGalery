@@ -7,23 +7,24 @@ export class CreateObraDto {
   @IsString()
   descripcion: string;
 
-  @IsNumber()
-  precio: number;
-
-  @IsString()
-  imagenUrl: string;
-
   @IsString()
   tecnica: string;
 
   @IsString()
   dimensiones: string;
 
+  @IsNumber()
+  precio: number;
+
   @IsDateString()
   fechaCreacion: Date;
 
-  @IsOptional()
   @IsString()
+  @IsOptional()
+  imagenUrl: string;
+
+  @IsOptional()
+  @IsNumber()
   categoriaId?: Number;
 
   @IsNumber()

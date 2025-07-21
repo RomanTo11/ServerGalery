@@ -22,6 +22,8 @@ export class CategoriesController {
     return categories.map(category => ({
       id: category.id,
       nombre: category.nombre,
+      imagenurl: category.imagenUrl,
+      fechaCreacion: category.fechaCreacion,
       obras: category.obras ? category.obras.map(obra => ({
         id: obra.id,
     })) : []
