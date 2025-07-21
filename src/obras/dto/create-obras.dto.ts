@@ -19,11 +19,11 @@ export class CreateObraDto {
   @IsDateString()
   fechaCreacion: Date;
 
-  @IsString()
   @IsOptional()
+  @IsString()
+ 
   imagenUrl: string;
 
-  @IsOptional()
   @IsNumber()
   categoriaId?: Number;
 
